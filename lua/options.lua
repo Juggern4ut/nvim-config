@@ -49,3 +49,6 @@ vim.keymap.set("n", "<Leader>w", function()
     vim.cmd("bnext") -- Switch to next buffer
     vim.cmd("bd " .. bufnr) -- Delete the original buffer
 end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<Leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
