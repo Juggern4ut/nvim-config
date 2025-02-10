@@ -35,6 +35,9 @@ require("lazy").setup({
         "nvim-tree/nvim-web-devicons",
     },
     {
+        "airblade/vim-gitgutter"
+    },
+    {
         "nvim-treesitter/nvim-treesitter-textobjects",
     },
   },
