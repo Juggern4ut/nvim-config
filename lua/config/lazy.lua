@@ -32,6 +32,10 @@ require("lazy").setup({
         "airblade/vim-gitgutter"
     },
     {
+        "akinsho/toggleterm.nvim",
+        opts = {}
+    },
+    {
         "mg979/vim-visual-multi"
     },
     {
