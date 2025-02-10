@@ -53,3 +53,7 @@ end, { noremap = true, silent = true })
 
 vim.keymap.set("n", "<Leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<Leader>tt", ":ToggleTerm<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
+
