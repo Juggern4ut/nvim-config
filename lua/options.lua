@@ -1,3 +1,5 @@
+---@diagnostic disable: undefined-global
+
 -- Disable netrw to prevent conflicts with the nvim-tree plugin --
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -54,6 +56,7 @@ end, { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>tt", ":ToggleTerm<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
 
