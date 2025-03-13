@@ -69,3 +69,6 @@ vim.keymap.set("n", "c", '"_c', { noremap = true })
 vim.keymap.set("v", "d", '"_d', { noremap = true })
 vim.keymap.set("v", "x", '"_x', { noremap = true })
 vim.keymap.set("v", "c", '"_c', { noremap = true })
+
+-- Map to format the whole buffer
+vim.keymap.set("n", "<Leader>fa", vim.lsp.buf.format, { noremap = true, silent = true })
