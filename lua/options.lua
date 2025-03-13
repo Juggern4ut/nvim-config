@@ -72,3 +72,7 @@ vim.keymap.set("v", "c", '"_c', { noremap = true })
 
 -- Map to format the whole buffer
 vim.keymap.set("n", "<Leader>fa", vim.lsp.buf.format, { noremap = true, silent = true })
+
+-- Map keys to allow saving a buffer when pressing Ctrl+s (in normal aswell as in insert mode)
+vim.keymap.set("n", "<C-s>", ":w<CR>", { noremap = true, silent = true })
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", { noremap = true, silent = true })
