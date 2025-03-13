@@ -53,10 +53,19 @@ vim.keymap.set("n", "<Leader>w", function()
     vim.cmd("bd " .. bufnr) -- Delete the original buffer
 end, { noremap = true, silent = true })
 
+-- Map keybinds to find (in) files
 vim.keymap.set("n", "<Leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 
+-- Map keybinds to open and toggle terminals
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>tt", ":ToggleTerm<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
 
+-- Map keys so that they delete to the black hole register (prevents coping text when deleting or changing)
+vim.keymap.set("n", "d", '"_d', { noremap = true })
+vim.keymap.set("n", "x", '"_x', { noremap = true })
+vim.keymap.set("n", "c", '"_c', { noremap = true })
+vim.keymap.set("v", "d", '"_d', { noremap = true })
+vim.keymap.set("v", "x", '"_x', { noremap = true })
+vim.keymap.set("v", "c", '"_c', { noremap = true })
