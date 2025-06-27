@@ -22,7 +22,7 @@ require("lazy").setup({
         import = "plugins"
     },
     {
-        "catppuccin/nvim",
+        'shaunsingh/nord.nvim',
         priority = 1000,
     },
     {
@@ -49,4 +49,4 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-vim.cmd.colorscheme("catppuccin-mocha")
+vim.cmd.colorscheme("nord")
