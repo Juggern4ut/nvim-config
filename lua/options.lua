@@ -49,13 +49,14 @@ vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true
 vim.keymap.set("n", "<Leader>w", function()
     local bufnr = vim.api.nvim_get_current_buf() -- Get current buffer
 
-    vim.cmd("bnext") -- Switch to next buffer
-    vim.cmd("bd " .. bufnr) -- Delete the original buffer
+    vim.cmd("bnext")                             -- Switch to next buffer
+    vim.cmd("bd " .. bufnr)                      -- Delete the original buffer
 end, { noremap = true, silent = true })
 
 -- Map keybinds to find (in) files
 vim.keymap.set("n", "<Leader>ff", ":Telescope find_files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>fg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>fb", ":Telescope current_buffer_fuzzy_find<CR>", { noremap = true, silent = true })
 
 -- Map keybinds to open and toggle terminals
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })

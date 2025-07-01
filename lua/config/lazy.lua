@@ -23,19 +23,19 @@ require("lazy").setup({
         },
         {
             'shaunsingh/nord.nvim',
-            priority = 1000,
         },
         {
-            "catppuccin/nvim", 
-            name = "catppuccin", 
-            priority = 1000
+            "catppuccin/nvim",
+        },
+        {
+            'Mofiqul/vscode.nvim',
         },
         {
             'zaldih/themery.nvim',
             lazy = false,
             config = function()
                 require("themery").setup({
-                    themes = {"nord", "catppuccin-macchiato"},
+                    themes = { "nord", "catppuccin-macchiato", "vscode" },
                     livePreview = true,
                 })
             end
