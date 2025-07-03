@@ -64,7 +64,10 @@ vim.keymap.set("n", "<Leader>tt", ":ToggleTerm<CR>", { noremap = true, silent = 
 vim.keymap.set("n", "<Leader>tf", ":ToggleTerm direction=float<CR>", { noremap = true, silent = true })
 
 -- Map keybinds to allow undoing by pressing U
-vim.keymap.set("n", "U", ":redo<CR>", { noremap = true, silent = true });
+vim.keymap.set("n", "U", ":redo<CR>", { noremap = true, silent = true })
+
+-- Map keybinds so Ctrl + n creates a new empty buffer
+vim.keymap.set("n", "<C-a>", ":enew<CR>", { noremap = true, silent = true })
 
 -- Map keys so that they delete to the black hole register (prevents coping text when deleting or changing)
 vim.keymap.set("n", "d", '"_d', { noremap = true })
