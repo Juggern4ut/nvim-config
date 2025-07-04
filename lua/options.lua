@@ -74,6 +74,9 @@ vim.keymap.set("v", "d", '"_d', { noremap = true })
 vim.keymap.set("v", "x", '"_x', { noremap = true })
 vim.keymap.set("v", "c", '"_c', { noremap = true })
 
+-- Map jj to leave insert mode
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
+
 -- Map to format the whole buffer
 vim.keymap.set("n", "<Leader>fa", vim.lsp.buf.format, { noremap = true, silent = true })
 
