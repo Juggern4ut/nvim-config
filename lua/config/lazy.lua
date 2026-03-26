@@ -47,6 +47,9 @@ require("lazy").setup({
             "airblade/vim-gitgutter"
         },
         {
+            "rhysd/git-messenger.vim"
+        },
+        {
             "akinsho/toggleterm.nvim",
             opts = {}
         },
