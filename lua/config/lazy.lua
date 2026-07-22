@@ -25,9 +25,6 @@ require("lazy").setup({
             'shaunsingh/nord.nvim',
         },
         {
-            'prettier/vim-prettier',
-        },
-        {
             "catppuccin/nvim",
         },
         {

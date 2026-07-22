@@ -81,7 +81,9 @@ vim.keymap.set("v", "c", '"_c', { noremap = true })
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 -- Map to format the whole buffer
-vim.keymap.set("n", "<Leader>fa", vim.lsp.buf.format, { noremap = true, silent = true })
+vim.keymap.set("n", "<Leader>fa", function()
+    require("conform").format({ async = true, lsp_fallback = true })
+end, { noremap = true, silent = true })
 
 -- Map to show warnings/errors
 vim.keymap.set("n", "<Leader>oo", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
