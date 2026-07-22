@@ -25,6 +25,9 @@ require("lazy").setup({
             'shaunsingh/nord.nvim',
         },
         {
+            'prettier/vim-prettier',
+        },
+        {
             "catppuccin/nvim",
         },
         {
@@ -35,7 +38,7 @@ require("lazy").setup({
             lazy = false,
             config = function()
                 require("themery").setup({
-                    themes = { "nord", "catppuccin-macchiato", "vscode" },
+                    themes = { "nord", "catppuccin-frappe", "catppuccin-macchiato", "vscode" },
                     livePreview = true,
                 })
             end
